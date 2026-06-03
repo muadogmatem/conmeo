@@ -255,7 +255,7 @@ local Window = Fluent:CreateWindow({
 	TabWidth         = 130,
 	Size             = UDim2.fromOffset(460, 430),
 	Acrylic          = true,
-	Theme            = "NeonBlue",
+	Theme            = "Midnight Blue",
 	MinimizeKey      = Enum.KeyCode.LeftControl,
 	Search           = true,
 	TabLogo          = "solar/planet-bold",
@@ -283,7 +283,7 @@ local userTycoon = (function()
 end)()
 
 if not userTycoon then
-	Fluent:Notify({ Title = "Error", Content = "may bi ngu ha thg lol", Type = "Error", Duration = 6 })
+	Fluent:Notify({ Title = "Error", Content = "m bi khung ha m", Type = "Error", Duration = 6 })
 	return
 end
 
@@ -1089,7 +1089,7 @@ FloatingButtonManager:AddButton("OpenUiBtn", mainBtn, false, false, nil, mainBtn
 FloatingButtonManager:BuildConfigSection(TabSettings)
 FloatingButtonManager:LoadAutoloadConfig()
 
-Fluent:Notify({ Title = "Ly Hoang Khang Gau Gau", Content = "da tung co 1 con meo", Type = "Success", Duration = 5 })
+Fluent:Notify({ Title = "Ly Hoang Khang", Content = "da tung co 1 con meo", Type = "Success", Duration = 5 })
 task.delay(0.5, function()
 	Window:SelectTab(1)
 end)
