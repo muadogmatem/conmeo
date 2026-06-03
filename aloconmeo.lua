@@ -250,12 +250,12 @@ Fluent:RegisterCustomTheme("NeonBlue", {
 })
 
 local Window = Fluent:CreateWindow({
-	Title            = "Ly Hoang Khang / Sell Lemons",
+	Title            = "Ly Hoang Khang",
 	SubTitle         = "con meo",
 	TabWidth         = 130,
 	Size             = UDim2.fromOffset(460, 430),
 	Acrylic          = true,
-	Theme            = "Midnight",
+	Theme            = "NeonBlue",
 	MinimizeKey      = Enum.KeyCode.LeftControl,
 	Search           = true,
 	TabLogo          = "solar/planet-bold",
@@ -283,7 +283,7 @@ local userTycoon = (function()
 end)()
 
 if not userTycoon then
-	Fluent:Notify({ Title = "Error", Content = "Tycoon not found! Make sure you own a tycoon.", Type = "Error", Duration = 6 })
+	Fluent:Notify({ Title = "Error", Content = "may bi ngu ha thg lol", Type = "Error", Duration = 6 })
 	return
 end
 
@@ -1089,7 +1089,7 @@ FloatingButtonManager:AddButton("OpenUiBtn", mainBtn, false, false, nil, mainBtn
 FloatingButtonManager:BuildConfigSection(TabSettings)
 FloatingButtonManager:LoadAutoloadConfig()
 
-Fluent:Notify({ Title = "Ly Hoang Khang Gau Gau", Content = "Tycoon Autofarm Loaded Successfully", Type = "Success", Duration = 5 })
+Fluent:Notify({ Title = "Ly Hoang Khang Gau Gau", Content = "da tung co 1 con meo", Type = "Success", Duration = 5 })
 task.delay(0.5, function()
 	Window:SelectTab(1)
 end)
